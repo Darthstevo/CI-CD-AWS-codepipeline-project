@@ -39,4 +39,7 @@ Things to create prior to starting the project are above ^. But here are the bas
 
 Follow through the tutorial and you will successfully “push” the files and directory you downloaded to your local machine, to your empty repo.
 
+Example after a successful "git push"
+https://github.com/Darthstevo/CI-CD-AWS-codepipeline-project/blob/main/Example-git-push
+
 
