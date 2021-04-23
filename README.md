@@ -58,4 +58,21 @@ Bootscript here: https://github.com/Darthstevo/CI-CD-AWS-codepipeline-project/bl
 * The pipeline starts running after it is created. It downloads the code from your CodeCommit repository and creates a CodeDeploy deployment to your EC2 instance. * You can view progress and success and failure messages as the CodePipeline sample deploys the webpage to the Amazon EC2 instance in the CodeDeploy deployment.
 * You can view the pipeline now
 
+**Note:** Mine failed due to the scripts having different extensions at the end. It's fixed via yml file.
+But the issue is, why isn't my repo being updated when i git push? Even though it says “everything up to date” it does not update my codecommit repo.
+
+**In case you see the following errors**
+
+when trying to push my repo branch:
+
+*“does not appear to be a git repository
+fatal: Could not read from remote repository. “*
+
+**Fix:** Be sure to edit the file first so git can see that something has been changed. 
+* Then do:
+* git add <yourfile>
+* git commit -m “updating file”  (or whatever you want to say)
+* Git push
+* Ref: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-create-commit.html
+
 
