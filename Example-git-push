@@ -1,0 +1,11 @@
+VirtualBox:/tmp/MyDemoRepo$ git push
+
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 5.02 KiB | 2.51 MiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+To ssh://git-codecommit.us-east-2.amazonaws.com/v1/repos/MyDemoRepo
+ * [new branch]      master -> master
+
+This all will now be in your codecommit repo :)
