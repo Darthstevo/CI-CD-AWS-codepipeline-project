@@ -1,5 +1,5 @@
 # CI-CD-AWS-codepipeline-project
-Practicing CI/CD hands on via AWS code pipeline. The guide will show how to create a simple pipeline that pulls code from a source repo (codecommit) and automatically deploys it to an AWS EC2 instance.
+Practicing CI/CD hands on via AWS code pipeline. This file is meant for reference, but will be following this guide https://docs.aws.amazon.com/codepipeline/latest/userguide/getting-started-codepipeline.html will show how to create a simple pipeline that pulls code from a source repo (codecommit) and automatically deploys it to an AWS EC2 instance.
 
 
 ## Summary, Pre-requisites and Overview
