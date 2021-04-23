@@ -3,7 +3,6 @@ Practicing CI/CD hands on via AWS code pipeline. The guide will show how to crea
 
 
 ## Summary, Pre-requisites and Overview
-
 * Creating a release pipeline that automates the software delivery process using AWS codepipeline.
 * Connect to a source repository, such as AWS codecommit, Amazon S3, or Github to your pipeline.
 * Automate code deployments by connecting your pipeline to AWS codeDeploy, a service that deploys code changes committed to your source rep to Amazon EC2 instances
@@ -11,7 +10,6 @@ Practicing CI/CD hands on via AWS code pipeline. The guide will show how to crea
 
 Tutorial: Create a simple pipeline (CodeCommit repository)
 The pipeline has two stages:
-
 * A source stage (Source) for your CodeCommit source action.
 * A deployment stage (Deploy) for your CodeDeploy deployment action.
 
@@ -41,5 +39,23 @@ Follow through the tutorial and you will successfully “push” the files and d
 
 Example after a successful "git push"
 https://github.com/Darthstevo/CI-CD-AWS-codepipeline-project/blob/main/Example-git-push
+
+## Create an EC2 Linux instance and install the codeDeploy agent
+* Create a role, attache the code deploy permissions to this role
+* Create an instance
+* Attach your new role
+* Set up security groups ( remember if you only use your IP as source, it will only show for that ip device. Can use 0.0.0.0/0 for testing)
+* Add boot script (code deploy agent) to the new instance:
+Bootscript here: https://github.com/Darthstevo/CI-CD-AWS-codepipeline-project/blob/main/codedeploy-bootscript
+
+## Create an Application in CodeDeploy
+* Create a role for CodeDeploy
+* Create an application on CodeDeploy
+* Create a Deployment Group
+
+## Create your first Pipeline in CodePipeline
+* In this step, you create a pipeline that runs automatically when code is pushed to your Codecommit repo.
+* The pipeline starts running after it is created. It downloads the code from your CodeCommit repository and creates a CodeDeploy deployment to your EC2 instance. * You can view progress and success and failure messages as the CodePipeline sample deploys the webpage to the Amazon EC2 instance in the CodeDeploy deployment.
+* You can view the pipeline now
 
 
