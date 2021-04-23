@@ -75,4 +75,22 @@ fatal: Could not read from remote repository. “*
 * Git push
 * Ref: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-create-commit.html
 
+Check on new website app (be sure to use your instances public DNS)
+http://your-ec2-public-ip-here.us-east-2.compute.amazonaws.com
+
+## Modify code in your CodeCommit repository
+* Edit your HTML file
+* Do git commit -am “updated sample html file”
+* Then git push
+* Watch your pipeline take over
+* Refresh your web page of your app site to see the new change
+
+## Restart Pipeline:
+* You can do it through CLI: aws codepipeline start-pipeline-execution --name MyFirstPipeline
+* Or go to your Pipeline and do hit the “release change” button
+* Ref: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/TUT_WebAppWithRDS.html
+
+### DevOps blogs and other related links:
+* https://aws.amazon.com/blogs/devops/
+* https://acloudguru.com/blog/tag/cicd
 
