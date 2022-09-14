@@ -41,7 +41,7 @@ Example after a successful "git push"
 https://github.com/Darthstevo/CI-CD-AWS-codepipeline-project/blob/main/Example-git-push
 
 ## Create an EC2 Linux instance and install the codeDeploy agent
-* Create a role, attache the code deploy permissions to this role
+* Create a role, attach the code deploy permissions to this role
 * Create an instance
 * Attach your new role
 * Set up security groups ( remember if you only use your IP as source, it will only show for that ip device. Can use 0.0.0.0/0 for testing)
