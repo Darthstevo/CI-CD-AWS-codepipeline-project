@@ -69,7 +69,7 @@ when trying to push my repo branch:
 fatal: Could not read from remote repository. “*
 
 **Fix:** Be sure to edit the file first so git can see that something has been changed. 
-* Then do:
+Then do:
 * git add <yourfile>
 * git commit -m “updating file”  (or whatever you want to say)
 * Git push
